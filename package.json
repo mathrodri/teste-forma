@@ -1,0 +1,11 @@
+{
+  "name": "teste-angular-matheus",
+  "version": "1.0.0",
+  "description": "teste forma turismo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "matheus gonçalves rodrigues",
+  "license": "ISC"
+}
