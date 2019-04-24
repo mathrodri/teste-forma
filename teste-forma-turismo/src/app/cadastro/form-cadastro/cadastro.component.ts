@@ -48,15 +48,12 @@ export class CadastroComponent implements OnInit {
 
   cadastroForm: FormGroup = new FormGroup(this.controls);
 
-  viaCepData: object = {};
-
   ngOnInit() {
   }
 
   getAdressByCep() {
     this.cadastroService.getAdressByCep(this.controls.cep.value)
       .subscribe((data: any) => {
-        this.viaCepData = data;
         this.controls.logradouro.setValue(data.logradouro);
         this.controls.bairro.setValue(data.bairro);
         this.controls.localidade.setValue(data.localidade);

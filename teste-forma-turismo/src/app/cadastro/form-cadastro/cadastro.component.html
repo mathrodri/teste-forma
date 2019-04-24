@@ -9,6 +9,7 @@
             [formControl]="controls.nome"
             [class.hasError]="controls.nome.touched && controls.nome.status === 'INVALID'">
         </label>
+        <span *ngIf="controls.nome.touched">teste</span>
       </div>
       <div>
         <label>
