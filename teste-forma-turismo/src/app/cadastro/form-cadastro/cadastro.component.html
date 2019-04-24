@@ -1,0 +1,108 @@
+<div>
+  <form [formGroup]="cadastroForm" (submit)="submitCadastro()">
+    <div>
+      <div>
+        <label>
+          Nome
+          <input
+            type="text"
+            [formControl]="controls.nome"
+            [class.hasError]="controls.nome.touched && controls.nome.status === 'INVALID'">
+        </label>
+      </div>
+      <div>
+        <label>
+          Sobrenome
+          <input
+            type="text"
+              [formControl]="controls.sobreNome"
+              [class.hasError]="controls.sobreNome.touched && controls.sobreNome.status === 'INVALID'">
+        </label>
+      </div>
+      <div>
+        <label>
+          Data nascimento
+          <input
+            type="text"
+            [formControl]="controls.dataNascimento"
+            [class.hasError]="controls.dataNascimento.touched && controls.dataNascimento.status === 'INVALID'">
+        </label>
+      </div>
+    </div>
+    <div>
+      <div>
+        <label>
+          CEP
+          <input
+            type="text"
+            [formControl]="controls.cep" (blur)="getAdressByCep()"
+            [class.hasError]="controls.cep.touched && controls.cep.status === 'INVALID'">
+        </label>
+      </div>
+    </div>
+    <div>
+      <div>
+        <label>
+          Logradouro
+          <input
+            type="text"
+            [formControl]="controls.logradouro"
+            [class.hasError]="controls.logradouro.touched && controls.logradouro.status === 'INVALID'">
+        </label>
+      </div>
+      <div>
+        <label>
+          Número
+          <input
+            type="text"
+            [formControl]="controls.numero">
+        </label>
+      </div>
+      <div>
+        <label>
+          Complemento
+          <input type="text" [formControl]="controls.complemento">
+        </label>
+      </div>
+    </div>
+    <div>
+      <div>
+        <label>
+          Bairro
+          <input
+            type="text"
+            [formControl]="controls.bairro"
+            [class.hasError]="controls.bairro.touched && controls.bairro.status === 'INVALID'">
+        </label>
+      </div>
+    </div>
+    <div>
+      <div>
+        <label>
+          Localidade
+          <input
+            type="text"
+            [formControl]="controls.localidade"
+            [class.hasError]="controls.localidade.touched && controls.localidade.status === 'INVALID'">
+        </label>
+      </div>
+      <div>
+        <label>
+          UF
+          <input
+            type="text"
+            [formControl]="controls.uf"
+            [class.hasError]="controls.uf.touched && controls.uf.status === 'INVALID'">
+        </label>
+      </div>
+    </div>
+    <div>
+      <div>
+        <button>PROSSEGUIR</button>
+      </div>
+      <div>
+        <button type="button">LIMPAR</button>
+      </div>
+    </div>
+  </form>
+</div>

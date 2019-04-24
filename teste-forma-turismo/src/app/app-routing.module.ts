@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { CadastroComponent } from './cadastro/cadastro.component';
-import { ConfirmacaoCadastroComponent } from './confirmacao-cadastro/confirmacao-cadastro.component';
-import { SucessoComponent } from './sucesso/sucesso.component';
+import { CadastroComponent } from './cadastro/form-cadastro/cadastro.component';
+import { ConfirmacaoCadastroComponent } from './cadastro/confirmacao-cadastro/confirmacao-cadastro.component';
+import { SucessoComponent } from './cadastro/sucesso/sucesso.component';
 
 const routes: Routes = [
   {
